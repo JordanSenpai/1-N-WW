@@ -1,4 +1,4 @@
-var socket = io.connect();
+var socket = io.connect('http://localhost:8000');
 
 const Roles = [
         "werewolf", "villager", "mason", "seer",
