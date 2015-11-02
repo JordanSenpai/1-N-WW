@@ -1,0 +1,118 @@
+<html>
+    <head>
+        <title>One Night Ultimate Werewolf</title>
+        <link rel='stylesheet' href='/stylesheets/style.css' />
+        <script src='//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+        <script src='/socket.io/socket.io.js'></script>
+        <script src='/javascripts/script.js'></script>
+    </head>
+    <body>
+        <div id="header">
+            <div id="name">
+                <div id="logo">One Night Ultimate Werewolf</div>
+            </div>
+            <div id="personal">
+                Welcome, <span id="username" class="link">Guest</span>!
+            </div>
+        </div>
+        <div id="content">
+            <table>
+                <tr>
+                    <td id="rooms_td">
+                        <div id="rooms">
+                            <div id="roomheader">rooms</div>
+                            <div id="roomcreate" class="blue button">new room</div>
+                            <ul id="roomlist">
+                            </ul>
+                        </div>
+                        <div id="chat">
+                            <div id="chatheader">chat</div>
+                            <textarea id="chatarea" readonly></textarea>
+                            <div>
+                                <span>Message:</span>
+                                <input id="chatentry" type="text" placeholder="type here" />
+                            </div>
+                        </div>
+                    </td>
+                    <td id="main_td">
+                        <div id="main">
+                            <div id="mainheader">
+                                <span id="roomname"></span>
+                            </div>
+                            <div id="roomleave" class="cancel button">leave room</div>
+                            <div id="gamenotification"></div>
+                            <div id="gameerror"></div>
+                            <div id="gameregion">
+                                <!-- content specific to game -->
+                                <div id="roleselect">
+                                    <div id="rolerow1">
+                                        <span id="rs0"></span>
+                                        <span id="rs1"></span>
+                                        <span id="rs2"></span>
+                                        <span id="rs3"></span>
+                                    </div>
+                                    <div id="rolerow2">
+                                        <span id="rs4"></span>
+                                        <span id="rs5"></span>
+                                        <span id="rs6"></span>
+                                        <span id="rs7"></span>
+                                    </div>
+                                    <div id="currentplayers">
+                                    </div>
+                                </div>
+                                <div id="playercircle">
+                                    <div id="playerrow1">
+                                        <span id="pr9"></span>
+                                        <span id="pr5"></span>
+                                        <span id="pr1"></span>
+                                        <span id="pr3"></span>
+                                        <span id="pr7"></span>
+                                        <span id="pr11"></span>
+                                    </div>
+                                    <div id="centercards">
+                                        <span id="prc0"></span>
+                                        <span id="prc1"></span>
+                                        <span id="prc2"></span>
+                                    </div>
+                                    <div id="playerrow2">
+                                        <span id="pr8"></span>
+                                        <span id="pr4"></span>
+                                        <span id="pr0"></span>
+                                        <span id="pr2"></span>
+                                        <span id="pr6"></span>
+                                        <span id="pr10"></span>
+                                    </div>
+                                    <div id="gametimer">
+                                    </div>
+                                </div>
+                                <!-- end content specific to game -->
+                            </div>
+                            <div id="gamecontrol" class="blue button">|</div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="changenamepopup" class="info">
+            <table>
+                <tr>
+                    <td>Name:</td>
+                    <td><input id="changedname" type="text"/></td>
+                </tr>
+            </table>
+            <input id="changename" class="blue button" type="submit" value="Change" />
+            <input id="closename" class="cancel button" type="submit" value="Close" />
+        </div>
+        <div id="createroompopup" class="info">
+            <table>
+                <tr>
+                    <td>Room name:</td>
+                    <td><input id="createroomname" type="text"/></td>
+                </tr>
+            </table>
+            <input id="createroom" class="blue button" type="submit" value="Create" />
+            <input id="closecreate" class="cancel button" type="submit" value="Close" />
+        </div>
+    </body>
+</html>
