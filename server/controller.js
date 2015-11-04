@@ -11,7 +11,7 @@ const END_PHASE = 'end phase';
 // Game constants
 const PHASE1TIME = 10000;
 const PHASE2TIME = 10000;
-const DISCUSSION_TIME = 300000;
+const DISCUSSION_TIME = 60000;
 
 // Client socket.io messages to server
 const CHANGE_NAME = 'change name';
